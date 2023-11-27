@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+/*Estilos del body*/
+body{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/*Estilos de la barra superior*/
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+/*Estilos del logo*/
+.logo {
+    margin-left: 30px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: rgb(11, 11, 58);
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+/*Estilos de los enlaces: letras del navbar*/
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: rgb(11, 11, 58);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.navbar a:hover {
+    background: orange;
+
+}
+
+/*Estilos del header*/
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Imagen del fondo de header*/
+.header {
+    height: 60vh !important;
+    background: url(https://monifai.com/wp-content/uploads/2023/01/Mask_Group_3.svg) no-repeat center;
+    background-size: cover;
+}
+
+/*Estilos de los titulos*/
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*Estilos de los parrafos*/
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    padding: 0 100px;
+
+}
+
+/*Estilos de los btn*/
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid orange;
+    color: rgb(11, 11, 58);
+    text-decoration: none;
+    background: orange;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: white;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: white;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgb(0, 0, 0, .5);
+    margin: 2rem;
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: black;
+    background: orange;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: orange;
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+
+}
+
+.about {
+    background: white;
+}
+
+.price {
+    background: url(https://scontent.fsjo7-1.fna.fbcdn.net/v/t39.30808-6/375668607_734824738656251_4623626817266807006_n.png?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=H8EiDcDuUgwAX_IgvTS&_nc_ht=scontent.fsjo7-1.fna&oh=00_AfBX6ZB6asp_l2AH06TetZDucnHL7IsA1bkf7kKiTCv3CA&oe=65626B99);
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 30px;
+    background: white;
+    padding-bottom: 0;
+
+}
+
+@media  (max-width: 768px) {
+    .title{
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+    
+    .sau{
+        height: 130vh;
+    }
+
+    .navbar{
+        display: none;
+    }
+}
