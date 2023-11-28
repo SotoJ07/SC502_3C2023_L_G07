@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monifai</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"/>
+    <link rel="stylesheet" href="../views/assets/css/stylePrincipal.css" />
+    
+  </head>
+  <body>
+    <div class="head">
+      <div class="logo">
+        <a href="#">Logo</a>
+      </div>
+
+      <nav class="navbar">
+        <a href="Credito.php">Solicitar Crédito</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+        <a href="index_login.php">Tu cuenta</a>
+        <a href="indexgrafico.html">Index Grafico HTML</a>
+      </nav>
+    </div>
+
+    <header class="content header">
+      <div class="btn-home"></div>
+    </header>
+
+    
+<form action="PHP\procesarRegistroUsuario.php" method="POST" >
+  <div class="form-group">
+    <label for="emailField">Correo electrónico</label>
+    <input type="email" class="form-control" id="emailField" name="correo"aria-describedby="emailHelp" placeholder="ingrese su email" requierd>
+    <small id="emailHelp" class="form-text text-muted">Su correo no será compartido con nadie.</small>
+  </div>
+  <div class="form-group">
+    <label for="Nombre">Nombre</label>
+    <input type="textfield" class="form-control" id="Nombre" name="Nombre-registro" placeholder="Ingrese su nombre" requierd>
+  </div> 
+  <div class="form-group">
+    <label for="ApellidoP ">Primer Apellido</label>
+    <input type="textfield" class="form-control" id="Apellidos" name="ApellidoP" placeholder="Ingrese primer apellido" requierd>
+  </div>
+  <div class="form-group">
+    <label for="ApellidoM ">Segundo Apellido</label>
+    <input type="textfield" class="form-control" id="Apellidos" name="ApellidoM" placeholder="Ingrese segundo apellido" requierd>
+  </div>
+  <div class="form-group">
+    <label for="cedula">Numero de Cedula</label>
+    <input type="number" class="form-control" id="cedula" name="cedula" placeholder="Ingrese Cedula" requierd>
+  </div>
+  <div class="form-group">
+    <label for="telefono">Numero de Telefono</label>
+    <input type="NumeroTelefono" class="form-control" id="telefono" name="telefono" placeholder="Ingrese numero de telefono" requierd>
+  </div>
+  <label for="Monto">Monto Solicitado</label>
+    <input type="number" class="form-control" id="Monto" name="Monto" placeholder="Ingrese el monto solicitado" requierd>
+  </div>
+  <div class="form-check">
+    <label class="form-check-label" for="Radio1">Asalariado</label>
+    <input type="radio" class="form-check-input" id="Radio1" name="tipodetrabajo" value="Asalariado">
+    <label class="form-check-label" for="Radio2">Independiente</label>
+    <input type="radio" class="form-check-input" id="Radio2" name="tipodetrabajo" value="Independiente" >
+  </div>
+  <div class="form-group">
+    <input type="hidden" id="tipo" name="Tipo-Usuario"  value= "cliente">
+  </div>
+  <div class="form-group">
+    <input type="hidden" id="action" name="Action-Usuario"  value= "Insert">
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</form>
+
+</main>
+</body>
+</html>
