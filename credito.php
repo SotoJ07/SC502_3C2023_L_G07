@@ -15,6 +15,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <link rel="stylesheet" href="plugins/toastr/toastr.css"> 
   
 
 </head>
@@ -242,7 +243,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <!-- form de solicitud de prestamo-->
               <div class="card-body">
                 
-                    <form name="modulos_add" id="usuario_add" method="POST">
+                    <form name="modulos_add" id="credito_add" method="POST">
                         <input type="hidden" id="existeModulo" name="existeModulo">
                                    <div class="row">
 
@@ -303,7 +304,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
                                  <div class="row justify-content-center">
                                     <div class="form-group col-md-6">
-                                        <input type="submit" id="btnRegistar" class="btn btn-success"
+                                        <input type="submit" id="btnEnviar" class="btn btn-success"
                                             value="Enviar solicitud">
                                             
                                         <input type="reset" class="btn btn-warning"
@@ -370,5 +371,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="dist/js/adminlte.min.js"></script>
+<script src="assets/js/credito.js"></script>
+<script src="plugins/toastr/toastr.js"></script>
+
 </body>
 </html>
